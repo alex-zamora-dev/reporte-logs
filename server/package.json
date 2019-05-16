@@ -1,0 +1,29 @@
+{
+  "name": "reporte-logs-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --max_old_space_size=6072 server.js",
+    "server": "nodemon --max_old_space_size=6072 server.js"
+  },
+  "author": "Alex Zamora",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.1.0",
+    "convert-excel-to-json": "^1.6.1",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.8",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.7",
+    "multer": "^1.4.1",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.0"
+  }
+}
