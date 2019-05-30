@@ -15,3 +15,13 @@ Ejecute los siguientes comandos en su terminal
   npm install
   npm run start
 ```
+
+# Documentación API
+
+### URL
+```
+    http://localhost:5000/api/cleandatalogs
+```
+### Método GET
+```
+Extrae solo la data que necesitamos de processlogs
