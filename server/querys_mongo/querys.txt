@@ -1,0 +1,53 @@
+db.processlogs.aggregate([ 
+    { $match: { 'request.qry_inv_req.array_obj': 
+    { $elemMatch: { skuid: '1073688066', zipcode: '62550' }
+    } } },
+    { "$project": { 
+        "tiendas": "$soms.dataset",
+        "_id": 1,
+        "createdAt": 1
+    }},
+    { $sort: { 'createdAt': -1 } },
+    { $limit : 1 }
+    ]);
+
+db.getCollection('processlogs').find({
+    'request.qry_inv_req.array_obj': {
+            $elemMatch: {
+                skuid: '1080289045',
+                zipcode: '55700'
+            }
+     },
+     'soms.dataset': {
+        $elemMatch: {
+            resultados: {
+                $elemMatch: {
+                    ubicacion: '0199'
+                }
+            }
+        }
+     }
+    })
+
+db.getCollection('processlogs').find({
+    'request.qry_inv_req.array_obj': {
+            $elemMatch: {
+                skuid: '1073688066',
+                zipcode: '62550'
+            }
+     }
+    })
+
+
+db.getCollection('processlogs').find({
+    'request.qry_inv_req.array_obj': {
+            $elemMatch: {
+                skuid: '1077795533'
+            }
+     },
+     'sterling.dataset': {
+        $elemMatch: {
+            fecconsulta: '06-05-2019 16:46:46'
+        }
+      }
+    })
