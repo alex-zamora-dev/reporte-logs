@@ -1,4 +1,4 @@
-# Proyecto para analizar la data de fecha estimada "processlog" y compararla con diferentes reportes como lo son Sterling, Soms o Dashboard
+# Proyecto para analizar la data de fecha estimada "processlog" vs SOMS y Sterling
 
 ## Backend
 
@@ -25,3 +25,20 @@ Ejecute los siguientes comandos en su terminal
 ### Método GET
 ```
 Extrae solo la data que necesitamos de processlogs
+
+### URL
+```
+    http://localhost:5000/api/dashboardJson
+```
+### Método GET
+```
+Convierte el dashboard.csv a JSON
+
+### URL
+```
+    http://localhost:5000/api/tiendas
+```
+### Método GET
+```
+Trae todas las tiendas analizadas por el algorimto genético por cada sku
+
