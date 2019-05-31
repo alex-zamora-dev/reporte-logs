@@ -19,20 +19,27 @@ Ejecute los siguientes comandos en su terminal
 # Documentación API
 
 ### URL
+
 ```
     http://localhost:5000/api/cleandatalogs
 ```
+
 ### Método GET
+
 ```
 Extrae solo la data que necesitamos de processlogs
-
+```
 ### URL
+
 ```
     http://localhost:5000/api/dashboardJson
 ```
+
 ### Método GET
+
 ```
 Convierte el dashboard.csv a JSON
+```
 
 ### URL
 ```
