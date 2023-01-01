@@ -11,7 +11,7 @@
   "author": "Alex Zamora",
   "license": "MIT",
   "dependencies": {
-    "config": "^3.1.0",
+    "config": "^3.3.8",
     "convert-excel-to-json": "^1.6.1",
     "cors": "^2.8.5",
     "csvtojson": "^2.0.8",
